@@ -1,0 +1,100 @@
+/* 1.Tipografias
+2. Imagenes
+3. Contenedores */
+
+
+
+
+/* 1.Tipografias--------------------------------------------------------------------------------------------------------- */
+h1, h2, p, ul, li, a {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: xx-large;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  padding: 10px 10px;
+}
+
+p .rectangulo{
+text-align: left;
+}
+
+a:hover {
+  color: orange;
+}
+
+ol:hover {
+  color: orange;
+}
+
+.t1{
+  background-color: rgb(0, 168, 219)
+}
+.t2{
+  background-color: rgb(219, 204, 0)
+}
+.t3{
+  background-color: rgb(219, 131, 0)
+}
+.t4{
+  background-color: rgb(158, 39, 39)
+}
+/* 2.Imagenes--------------------------------------------------------------------------------------------------------- */
+
+img {
+  max-width: 200%;
+  max-width: 200%;
+  border: 2px solid blue;
+}
+
+/* 2.Contenedores--------------------------------------------------------------------------------------------------------- */
+body{
+  margin: 0px 0px;
+  background-color:  rgb(53, 49, 49);
+}
+
+div{
+  display: block;
+  padding: 0px 0px;
+}
+
+.menu {
+  background-color: rgb(53, 49, 49);
+  padding: 0%;
+  display: block;
+  max-width: 20%;
+  height: 100%;
+  float: left;
+  margin-right: 20px;
+}
+
+.color_container {
+
+    display: block;
+    max-width: 80%;
+    max-height: 100%;
+    text-align: center;
+    float:right;
+  }
+
+.rectangulo{
+    display: block;
+    max-height: 25%;
+    text-align: justify;
+    padding: 20px 160px;
+}
+
+.content{
+  display: inline;
+}
