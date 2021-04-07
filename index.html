@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ayuda a un Peludo</title>
-
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatbible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Ayuda a un Peludo</title>
     <link rel="stylesheet" type="text/css" href="css\style.css" />
   </head>
   <body>
@@ -40,17 +42,50 @@
       <div class="rectangulo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAACVBMVEUXKlUXKVUYK1UDDFTqAAACaklEQVR4nO3d23KrMAyF4dD3f+heZCaTSQIYrMOS/H9X7bR7Y1tLhkKaPh4AMGjLHgC6+csegLuQGdKZgIGdRprpL3ozGDXEpPF6bxLZUBgDqlovPdcvymut0exoD3Y1jQ3vYVlDkQlhcVdbi9yipc9gHwZdsQtujOn2NBTn/1izhrf/o6ljvU4bh1dtsNf/6cU1pKw1ytseJU7CwjdEUYEgcc1GW3uhhhMaTglvZJ68AW7e7qkFx923v1K6N2nD6FpDwNpJYiXjLDko4MudpH4/1Zs7q2w/PjI+xNmBfTkfx6aGQFHlTrdchaMPsuyr8Pqy0aGZwUhvB5+hh7OqzmfALzdrJfK7aUfnr9zHWqMBAJxi466PGiJeSuqIup7MmtR7QUamoEetrDtmkJ9yKFmOFZ5qxc6w7nqOjDxydrbH0n+Z2GYw4fs19KnstvvJhX8XZYXN0J/yKuqODMUpx16I1w2XZosvPR3pm2b0oTwKhEKqx/Vs/MM/GY+8qbrVYm0/P1zW/ho8vzJdQw+Xazh/7iYrayuUILXbrRjRsCKfU7p2p7zhghiIXpW540m+e8DkVm5+H0Aw6IJDilb3rTRQm+zLFn99l/7T7wBat4ataqg0p1Ra5UWCtAicHpZotrYfvLzCN4+cX6/LLpzswIrjygEvhKEsSodAxA2ykqMZ0xt+PwHQ2f2kVrVXoHrNBiOoObAquj8Qi10fNRQx9uuKlAtAYWxhLkKXlRquh5oruPYnUABLpKs+nRr6j+T9WZrOvCGPR+u4hdg88at8tjJyRQ1xx9p7IJcOaC38TjPnIXOr1pDNGRP+Adn1AR/fGiSGAAAAAElFTkSuQmCC"></div>
 
     </div> -->
-    <div class="content">
-      <div class="menu">
-        <ul>
-          <ol>Inicio</ol>
-          <ol>Nosotros</ol>
-          <ol><a href="./perros.html">Perros</a></ol>
-          <ol><a href="./gatos.html">Gatos</a><ol>
-          <ol>Contactos</ol>
-        </ul>
-      </div>
+    <header>
+      <nav class="navbar  sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Ayuda a un peludosky</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Mascotas
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="gatos.html">Gatos</a></li>
+                  <li><a class="dropdown-item" href="perros.html">Perros</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
 
+    <div class="content">
+      <video autoplay muted loop id="myVideo">
+        <source src="files\fondo.mp4" type="video/mp4">
+      </video>
+<!-- 
       <div class="color_container">
         <div class="rectangulo t1">
           <h2>Lorem Ipsum</h2>
@@ -96,7 +131,8 @@
             remaining essentially unchanged.
           </p>
         </div>
-      </div>
+      </div> -->
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   </body>
 </html>
