@@ -1,164 +1,319 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatbible" content="IE=edge" />
+    <meta name="viewport" content="width-device-width, initial-scale-1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <!-- Fuente Iconografia Externa -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Ayuda a un Peludo</title>
+    <link rel="stylesheet" type="text/css" href="css\style.css" />
+    <title>Perros en Adopción</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatbible" content="IE=edge" />
-  <meta name="viewport" content="width-device-width, initial-scale-1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
-     <!-- Fuente Iconografia Externa -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <title>Ayuda a un Peludo</title>
-  <link rel="stylesheet" type="text/css" href="css\style.css" />
-  <title>Perros en Adopción</title>
-</head>
+  <body>
+    <header>
+      <!-- Comienzo del Navbar o barra de navegación -->
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Ayuda a un peludosky</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html"
+                >
+                  <i class="fas fa-home"></i
+                ></a>
+              </li>
 
-
-<body>
-  
-  <header>
-    <!-- Comienzo del Navbar o barra de navegación -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Ayuda a un peludosky</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"> <i class="fas fa-home"></i></a>
-            </li>
-  
-            <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros <i class="fas fa-users"></i></a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Mascotas
-                <i class="fas fa-paw"></i>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item" href="gatos.html">Gatos <i class="fas fa-cat"></i></a></li>
-                <li><a class="dropdown-item" href="perros.html">Perros <i class="fas fa-dog"></i></a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Otros</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success" type="submit">
-              Buscar
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-    <!-- Fin del Navbar -->
-  </header>
-
-  <div class="container-fluid">
-    <div class="row"></div>
-    <span class="badge bg-light text-dark">Light</span>
-
-    <div class="row">
-      <div class="col-4">
-        <h1>Gatos en Adopción</h1>
-        <p class="texto_justi">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text
-          ever since the 1500s, when an unknown printer took a galley of type
-          and scrambled it to make a type specimen book. It has survived not
-          only five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s
-          with the release of Letraset sheets containing Lorem Ipsum passages,
-          and more recently with desktop publishing software like Aldus
-          PageMaker including versions of Lorem Ipsum.
-        </p>
-      </div>
-
-      <div class="col-8">
-        <!-- Sección Carrousel -->
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html"
+                  >Nosotros <i class="fas fa-users"></i
+                ></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarScrollingDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Mascotas
+                  <i class="fas fa-paw"></i>
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarScrollingDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="gatos.html"
+                      >Gatos <i class="fas fa-cat"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="perros.html"
+                      >Perros <i class="fas fa-dog"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Otros</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <a href="https://www.qries.com/">
+        </div>
+      </nav>
+      <!-- Fin del Navbar -->
+    </header>
+
+    <div class="container-fluid">
+      <div class="row"></div>
+      <span class="badge bg-light text-dark">Light</span>
+
+      <div class="row">
+        <div class="col-1"></div>
+
+        <div class="col-3">
+          <h1>Gatos en Adopción</h1>
+          <p class="texto_justi">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+
+        <div class="col-7">
+          <!-- Sección Carrousel -->
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="#ListaGatos">
+                  <img
+                    src="https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                    class="d-flex w-100 img_contenedor"
+                    alt="Don gato Corleone"
+                  />
+                </a>
+
+                <div class="carousel-caption d-none d-md-block">
+                  <h5><a>Don gato Corleone</a></h5>
+                  <p>Un gato con personalidad propia .</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="#ListaGatos">
                 <img
-                src="https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-                class="d-block w-100" alt="Don gato Corleone" 
-                style = "max-height: 700px"/>
-             </a>
-              
-              <div class="carousel-caption d-none d-md-block">
-                <h5> <a >Don gato Corleone</a></h5>
-                <p>Un gato con personalidad propia .</p>
-                
+                  src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  class="d-block w-100 img_contenedor"
+                  alt="..."
+                />
+              </a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Segundo Michi</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="#ListaGatos">
+                <img
+                  src="https://images.pexels.com/photos/7335647/pexels-photo-7335647.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  class="d-block w-100 img_contenedor"
+                  alt="..."
+                />
+              </a>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Tercer Michi</h5>
+                  <p>
+                    Las probabilidades de que te mate tu gato son pocas pero
+                    Nunca cero.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <img
-                src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Segundo Michi</h5>
-                <p>
-                  Some representative placeholder content for the second
-                  slide.
-                </p>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-separador">fdf</div>
+
+      <section id="ListaGatos">
+        <div class="row">
+          <div class="col-2"></div>
+
+          <div class="col-8">
+            <div class="row">
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                    class="card-img-top img_card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title"></i>Don gato Corleone <i class="fas fa-cat"></i></h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><i class="fas fa-calendar-alt"></i>Edad:</li>
+                      <li class="list-group-item"> <i class="fas fa-venus-mars"></i>Género:</li>
+                      <li class="list-group-item"><i class="fas fa-notes-medical"></i>Estirilizado:</li>
+                      <li class="list-group-item"> <i class="fas fa-microchip"></i>Chip Nro:</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://images.pexels.com/photos/7335647/pexels-photo-7335647.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Tercer Michi</h5>
-                <p>
-                  Las probabilidades de que te mate tu gato son pocas pero
-                  Nunca cero.
-                </p>
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    class="card-img-top img_card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title"></i>Garfield <i class="fas fa-cat"></i></h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><i class="fas fa-calendar-alt"></i>Edad:</li>
+                      <li class="list-group-item"> <i class="fas fa-venus-mars"></i>Género:</li>
+                      <li class="list-group-item"><i class="fas fa-notes-medical"></i>Estirilizado:</li>
+                      <li class="list-group-item"> <i class="fas fa-microchip"></i>Chip Nro:</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBQUFBgVFRQZGBgaGhoaGRobGxoaIhsbHBsZHRshHBodIS0kIR0qIRoaJTclKi4xNDQ0GiM6PzoyPi0zNDEBCwsLEA8QHxISHzoqJCgzPDM1MzQ5NTMzMzMxMzQzMzMzMzM2MzMzMzMzNTMzMzMzMzMzMzE8MzMzNTMzMzMzM//AABEIAMQBAQMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAABAUGBwECAwj/xABDEAABAwIEAwUFBgIJAwUAAAABAAIRAyEEEjFBBVFhBhMicYEHMpGhsUJSYsHR8BQjFRYzcoKSouHxk7LSF0NUY8L/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAKhEAAgIBAwMDBAIDAAAAAAAAAAECEQMSITEEQVEycYEFEyJhFJFSocH/2gAMAwEAAhEDEQA/ALi7ockd0OS6IQHPuhyR3Q5LohAc+6HJHdDkuiEBz7sckd2OS3TbxfijcOzMQSSYAHkbnpZQ2krZKTbpcimu9jGlzyGtFyTYBNGK4s2HBrTYWiC4k6Bo5/IKM8T7/Ft72o9zKTT4WlobmP4QHGfMpJw/iNOnLczWw8zcTBaInfVx+aynOVuKW6VmrxxjBTb700da/F6rXupjDS2BmdUec50El8bSE8Hs/UqQS9uXkHF31A0UX4r2go948e9mp2gRcRzj7pTvh+02am11OmSIFzp+Q+a1UNWJO+Vur2MY9SozdJKns6tjww0GAM7uR94kG9r/AL5JTToZCYY4tm+QtdBuJAJnZVtieI4uoXNY1zoJ/s2uf5XaD/3JfhMRjSWv7itJGrv5YnrNzfNvuFz4I3if+Sf+jfqsjhNad0138j/icE81yQ4sZrIBblOkZTGt/guPFsAab2kPOeJD2zqCeR10Td/SOMa8ipRDmv0LCbTzB1UhwVCp3YsXODRc7gmxLTGUgWIH/GudRlDXGVtrdFemyzWRKUKSFuExJqU2F5fJF3CW33sItKRYbjT2PDXZi2XNOcG594Q83Bi1+SR4vtcaMU+7aXNcG5hfW9pFo9V2xXE6ddrgXEGM0OAgObcFpEG/iGvNZRybKLe74NMuB7zSdfpkuwGIp1mB7NDqDYg7gjYpT3Y5KAcBxj6NcHVtQgPb9HN8vorAa6bhaY8kZ3XYzy4ZY6Uu6sO6HJHdDkuiFqZHLuQjuRyXVCA4Cn0C2FEcl1QoBz7ockd0OS6IUg590OSO6HJdEIDn3Q5I7ocl0QgOfdDkhdEIAQhCAEIQgBCEIDVVX2s7Q1O+qsa4NDXlggZnQweLoASDvN1Y/F8aKFF9UwcrSQDaTsPUqm+0HFBTY12USe8L4s5zqmroi953WM56ZJJWJJ1sKuKOq1KMBtVwa0GTAFtdjtO6j+EoP7zIGSXNMCS7TUwDynUJ64fUxtekH1ajMNRymCRmqPaOTDoNrwkVLFd2w06cMaZzvdd1QH77j9mNhZZSyzU7aS7eTpxYk8Lhy+fYWYbCUnVB39XKWiRTohrTNpBcG6D4rON4xRpZW4fDtaGggOqE1CCbSQSfS8KNYvuW6Vi52uWm0vv/AHm6JDQ4k/vAwUoLrA1AXH00/NXjajsYuEdV1t4JpgO1lQMLHVHAX9xrQL9WiQfVIuIYqrVOZpe8REOJI2MtJ0MgJLRoVD7zo/uho/JJ+J4J4pvfTqPDmibONwNfOyxjBKTfdmktDWyoU0+M4pgFNwIy+6XNbYg2JEXjmZCWN4xjGPbUdBAFoAEfiBbcqH8Kr1q1QMc7MLkl0yAORBCejgns0LiOQdHwkGCtWtKcVw+SIZKaaW6J5w/tE3EDJiGNB1D8ocfQiCtMbwfNekWuYTLhm8oAmCJIFj81W+JqBp8LnsPIn9Pql2B4i5/hdWIO0579DDhdUq41Lfw+6Oj7slLXBV5XZlk8GqlhOdjswtpeIvYkfs9FL+CY3vGuEEZDFwRIIkGD1lVFguL1KBGaoHsNgIIa3oN2j5dFYPZPE0313FhJmnJuYjMALaZh4gT0U4IKLavbt+zHqMv3pakq8rx7EzQhC6znBCEIAQhCAEIQgBCEIAQhCAEIQgBCFgFAZQhauMBAbIQhARX2gV8uDcyYNRwYOdpeY9GFVLVptp5Wt8eKLgQIzNpxv+J5sY6R1Ni+1LG0qdFmd3iBcWiJhxAbfkcrnRKrTB0qlNne0iAwGzgDOZwiRO149epXPPZtt149zZbxUY1bbvzQm4hXq4U5XuJqukPBM+HUBrb5R5WK4YThtSs5uYkT9kaD0C64ei6pVNZzc8HKwT7zhYuncTYevSZrhcGzB0TVqwXkX89mtU7qO/LMoqhqbgqGHaA9zWeep9F3oYrCPt3jPW3zKiHEarqtRz3nUpK+gNrIoeSdRZtPhjXXaQRzF/mudThBE2sduirzAcbr4Z8seY3Gx8xurS7Mccp42nLbPHvs5dR0U6ELIjwTs+6gXzcl3h/uDQeaX1cM7kVNX4UDZMXGuNYbDnK8gu+625+G3qolC2TZAO1FFzKeeIOYCeV0yYTiDSRmbGxjfrHNTl/abC1PC9jmg/eaCPkSo/2g4PTy/wARQIIm4Gh9NiiSrSyym07TFWCpU6rSA8TuPz2U09l9J9PFOpOdMMdHItlsev72VWYBzbGY56H5FWv7L8MBiHvLw7+WQ3UWLmTYk9NFSKUZUzTJNtWuGWqhCF1HMCEIQAhCEAIQhACEIQAhCEAIQhACEIQAsLKEAJg4l2gpNxDMGHHvXtLjH2GwSP8AEYMDpPKX9VJ7Um1KOOw9em4jvGBtpBzMfcT1FQCOiAl/aHhlOvT7tzZB+vPqVW/EuG1cHTIzTSzw1jvs5tJcNg4zHT42Yak3B5x+/RM/HcKK1NzHaEcgdNDoVnNJvclEX7OYIOqMETFyYA+Qt6JZ2t7O1HDvaZe4/aZJdbm0beQWOwzi5zwZ/lnIZtJ5+oAPqp6ximrZBQuIwlRpIc0jzsVoazssAsaBtH13V+1uHU6gipTa4dQCmDGez3BVDPdub5OP0Mq/2xqKUxoBEz4pMgAxHQpy7D4h9PGUgDDXuyO8nafOFYeL9m1L/wBqoWdHAO+kLXg/s4bSqMqvrOe5j2vADQG2MxufmigLOvb/AIm/C0Ib79Q5Wu+7uT8FU9F4e4uc4ucdSb/Mq8e2PZgY1rA6oWNYS6wBJJEa7BV3ivZ/iaYLqTqb76XaT66KHGgiOPiLj5FL+CUS5z6YPhex1uouClVHstjzY0C0fec8R/3XCU8D4NiKWKDHtMjxSdMvQi19FnNUiyIrRYG1HNyyHAO0JgmxBva8/BWb7GcIS6vWJPha2mOVzmt1AaLdRzUW4dwGvXxAp02ABzxne8hrGhpeSJ+07xe6AT4RpqLw4JwenhaQpUxA1cd3OgAuPUwPQAKIq3Zdy/HSx0QhC2MgQhCAEIQgBCEIAQhCAEIQgBCEIAQhCAFqT0WyEBgFQz2pcONbAue0EvovZVbAvAOV3UQ1xda/hUyGi0q0w5pa4Agggg3BBsQRyUAq32c8UNal3eWO7AbcdXRudWlvqHRopVjqMAkmBBn9x8lx7OcHp4Vr2M0NSpB3yh5DJdvDYHolXGK2WmeoP78lEqqyVyRDh9enhy8sEF787tLugDyiALJyocdqTIMj0+ijDP5kPHu5oG0km/nupNg+HNyCfms9bTJoX0+L1HGT4Rs4Ex6gpWzipI94HqN/RNIwIAhpgcpSWngHOeQ0kDn+hV1NlWkKOM9sG4UtzsL80kEEQIN5KYsT7Ty27KTR5kn9E98Q4Mx7MhAcIuCAZnnIUK4p2UptbDGPYbAx4gepHPTdWc2QkiScP9ptOqQ2rTyT9ppmPMH9VMsBiqdRgdTcHNNwRuFTVLsg4kBlQ9fDHpMlT7hNHuqbaeb3REaRdQppk0Sx5EapBiGNTe8uvBsm6riiwnMQR8VnOSZKQn4Zw5rx3jhPieRPImLDrA+CnnZcu7pwJlodDeggEjy/UqHYDFh1SlRBIe+YB1AG56TurGwmGbTaGtFh8zuT1WeJNystJ7UKEIQuooCEIQAhCEAIQhACEIQAhCEAIQhACELRpn98kBshCjnF+0raIJDZaCGzcyZiwG3VTCEpOkis5qKtkjCb+K8Xw+GYX16rKbfxG58m6k9Aq8437TO7a5lOHVNB4YDTuddY87gKpeJ4upVe6pUeXveZcTuefL4KZQcdmIyUlaL54NxmnWpl9J4ezM5rTBExuQbjZN3aribaVF9RzrATHX7Ijkqn7K9pjg6jpk03thw1hwBykD97cko7UdpxiS+myzDlh9xaAYLSLXsfJZ12LEyo1R3WFewEsLGuk84Fz1mSVJf4pgiIn9dPX9J84N2X4zTGGp0XuaXsloHMZpFz0S52JOcnQWH76foFk1TssS5hY2XuMvO5Og5Dom9vEZc4g5WNEk+Wp+gTNjsQ90AA73+Cbe0ODxQoNNMkDN4g3VzTfXorq2rCVuiTM7TU6dSHS93IX+KVM7UYSpBewsOxuJ/VVxQwFTu89Cq7M2TldBufeBkapPhuPYio5tPuWOc22jmm1pPL4KuqXY1eKtmWy2rTfBpPad7pPj8U0FpgTp56R+arLEY+vReH5QNyxriZ9CpEziBdTYXmLFzs2oiSQfKQFKd9ikoaeSW4p9SGkGJBjlbaR0v8eSivGuJU2MZUJjPDiNTliT5205yEh7QdrpZ3VKQ5p1joRMc9IUHrYp7g1rnFwaMok6NGgHRPt27ZWx8wvaapTxZxLNYyMBPusEZRPO0+cq/uz3H6ONpuqUcxa12QkiJOVrjF9BmieYK8uP1nbkrV9iWGrOqVapa4UmtLGmwaXEtJAtc2ExEW8laq4ILnQhCuQCEIQAhCEAIQhACEIQAhCEAIQhAYKw0LKbuL8SFFk2LjoD9T0QhtJWzlxniAY0tafGRqPsg7+esKGcZwvf0XU2ENeBLCdA6CBMbXI9V2LX1STe5JJO5K6NwGW+a+5K9LBiUFvyzy82ZzltwikMTRqUnuZUaWuaYc06/7g890iqum6uPtP2ep4ynaG1WjwP8A/wAuj7J+WvnUWLpOpudTe3K5pIc0i4I/eu65c+Jwf6O7BmWRfsROXag2/mudoW9Fo16WK5zc6uJ5wnrhXGnUyAfG3drvy5KOvcZWA8jmoe4Lp4GG4gse0yyNfyPXopcMO2ADCpjsP2o/hamWoZpPIDvwH7w/MK46WKp1aYdSeHiJlpmymKpUBk7UU8LTpOqvYGPEQacNLjoJ2PqFHuCYnBVMznvfLY+63X8TQDAtdJvaMak0wfd8R9bfkoT3xpmWuLDpmaYne/8Aum13RoskkqTLB4rxLh+Hghgc+3hBLzHPNdvwKg/FOOOr5iAGA/ZFv+dk1PrTvpp5Lg7zUUijk3ydTUvcXhcXvug80/8AZTsxVx1UNp03ZJGd8ENb5uiJ6ao3RAj4D2fxONeWUKbnR7zos0dXG3pK9McA4f8Aw+GpUfD4GBvhaGD/ACgm/MyZMlY4NwahhGCnRZlaAG6kkwSZJOpJcZP6JzUJdwZQhCsAQhCAEIQgBCEIAQhCAEIQgBCEIBLjMS2mwud6DmdgonVl7y993OPoOQHQf7rtisQ6oZcdNANB5JM8HZ0eYlejh6fTu+TzM/U6to8HUvhYLmnZJ++eNQCOYv8ALVAqNOi6tJx6japSG1lE+1vZsYpmdsNrNHhdoHj7rvyO3kpZmsktd3OylwU1pZMZuEtUShX0nNcWuBa5phwNiCNQQt4EWmVb2L7PYXE1A+qwZjALhbMREZogkWjmoF2t7NOwbswEMMAXnxGSY/DoBN9V5ObC8cqZ7GHMskbRGXCFpK6g7G60c1YGxsx/knbgXGamFqsqUnGARmaLB7Zu09EygLuwRdSgSbtZ2odi6hIbkYD4BMkj8W3PylRomdB1/YWpvosElAZlbQDb4Lk4In/hAdWsEi5urI9kXaA0sR3NR0MqAtaXk+FwuA2TDQd7XMclWjTNjtpslNKqQRdQ1YPWyFBfZp2nOKo93VqNdWZoL5nMtDiTYmZ00ETqp0idgEIQpAIQhAYWVgrm94AJJAAEkmwAHMoDotKjw0SSABqSYHxUC7Q+1HCYeW0wa1S0AWbq4GXbRl5XzDrFT8V7X8QxzsjqjnAme7YMrRrtyExLuirfgmi/2dpsG5zWNxNNznOc0AOmXNzZtOWU3005iXZjgQCCCDcEbheXavCntgCqDUMuLBm8O7i5ws3z36q5/ZThcYyg/wDimua2Wik1wgn3i90awczQCb+HlCJsE/QsSsqxAIWuYLKAqhnF6jZa4uc7bwtb/piY9U84CtUqD7BP2gTkcPIXBHqm+pjaLhAa3oG6HqHxHw/4TOztcCyWt5i5B6u5dR+q5v5uaO9/D3Z2Q+n4M0K00+zXA+YmkBd2Zm0nSfPRIMVSeLlpcPv07n1G6X4JlSr4ahsbAuJg+i6f0DUpGQ+GfhHyINgOoXpYPqWt1Tryeb1P0hY7/NX48/IxUMVUF2kVG7kajzbqErGJa/eCluO4XTe3vDYj7bTkeI58/wB2TW6jWF2VGVB+MQf8w/ReljzRnuux5E8UoOmjNVkJJxbAtxVE06rjDSDrcdZNovHT6ZqYp7f7SmRz3B9Qk+JrNyOcPEACSJI02PRTnhGUXZfBkcZKu5AON9mqlDxs8bN93NHWNR1TG4Kz6by6nnc8FxMtaLRyEcztsoFx7B93UkXa/wAQjnuP3zXgqUW3W9HtuMltJUxrasl5m60c6bInmrEGS7e60L1l59VqB0QGzUaW+C18lt6IAjmstB2Wq2aNwgJB2Q4nUw+KpvpuuXNb6OIDhBtoSL2uvTzHAgEaG4XkdlSDI16SFfXso7RuxWHNJ5l9ICCTJLDYWiwEAanVV4fuSWChCFYgEKv+3vtCbgHtoMYX1fC55Ng1kg2mzi4SLG26hLva9jS9+WlSykksblccrBmPiIdcwRJsPDpdRYLk4zxijhKZqVnhjQCepgEw0bmyo3tr7QqmLJZRc6lSLcrm5veGYmTbU2+HUqIcY41XxdR9Ws8ue6J2FgAAG6AQBou3DOEOqQTZsjqTzgC5OnoZ2UNXySY4Zwt1dr3Zg0MiSd+cdBBT9SZTosgQBEknfq7mOTf913a9tNkXAgG8EWkizbT1OkabppxGBNa73CmLlrTrbeOf/FtFVu2SJ8Zx8ye6ABJBL4iY08425dTdcMR2jxtT+0xdd3Q1Hx8AY5rU8KDfeeG6bHT1g+q4ilTbdz51sGk+UkKU0RuPXZ3trjMG8upvzh0ZmVC57SP8wjz2V8dke1dLiFPPTY9hHvBwtOhyuBIInyPRebK+LZlyMYJ3cWgR0aLn1JKlHYrt7iMG9lN7i+hIBZrlaTctE+9yugPRyyoz/XXCf/Z/03/ospqRA3Yng9CpfJlPNvh+QsUpwbO6aGlocB9to8X+Jup9EnpY1swlofN14MJyi7T4O5yenS+BtxmMbBdSGYA32AK1wHG31P5b3+LYN3HIk7jyXfG4IOl7Pf3EwH9HfSdUxtGR8MBDmm02LTqATufKei9JdTG1kgt+67e5bFGM08cvh/8ABVjMLUa4OAhrjo8uInkRP7+K44jhj3U+8ZV7t+gIAgO+7UYbETa0EbHRPTsWyrTh7gJs5o1Dvr8Y1UZxWPdSqFoaANC4zJGxsf16krq15KWRyUfbdtHJ/HlKThpsKWIqhsVWNcQYdkluXbMWu0bNpncLgW06lmEQbEaX5EbFa4mo8PDy6RGUgQAJtIAtBBI9UmocPe6zXljRGSpqWnZj+Y6/nC3j9Tfo5vh9yM30ZV9z01253GPiVR1Oo6nJdltcDkCehgKO8bxJqBkyXCZJ3lPHEy8VXMqGHyS4G0k7t5g6ymbijND6eu/qFyYm1sd2eEHhUuXtv3GkLI6hZeL6LEEbLpPNObj5LC6ELQoDDVtlWIWp80Bt81s0LUhDCgNyP3KlvYbtSOHVHVXU84czLlDsrrkXB023TDguFPqMc/YNcW83ZQSY2i2qbXvmIVXvsSXJxj2wNLIw1KHlsy8+6620QfzHJRit7U8e+kaYc1rjml4AzeJzj4dhAcGj+6OswFz1gJp8ixxptfiqxL6nicS573GT1PUqSswlLuqlOnTyABzQ4+9Uho8RJ2JJiLKPcNpwLjXUi5g6NHUqR4bFdQCflM+lg0fA8lnKW9IskIOC8DpupuqPJc8EDLBDbzEP1zGxkAwNk7AgWDRA0Ii4FweRAJkATEzYmF2qOAEBpa3drR4Zi5u2xIJE5h7ohI3utsZ30BOttZG/2onbKrykVSO0j1tcWuJ85Mz94WM7pNiGOaDkOUTfoBqSd4vMk3F+Q2zxrz+domPSJnaB7sYZVk6/MbfnHnbmAFRFhH/BtuTrrLiXHa+QaDzhNzsbRaY1jcAkWHPNz/e6eBQYXS4T+F1gJ1J1udh1Oogrp/V92IIdToOfcNDmMcBJmBJIE6Qp27kEefxCibGm6OYMH4z+56KWdh8NwzF1G0cSXNm1On7rXu5GpOeegIGt9Fj/ANLcc9wyUgwWkvcwDa8BxPp5rpwD2Y412IArMFOmx/ifIOmhZI8XSOminYgub+q+F+6//q1v/NYXb+iX/wDyav8Ao/8AFCV+gMeJwwcJbqmo46pSd4vd+icHOdTMat2P6rq5zKgu0FeBR2hSrCoMzCJ5c0g4ng+9EtOSoBEzGYfdd0+ibK7jhn56clhPib93qP0T5TqtqsD2m8SCN1ZNx3RHDsZ+HsLX5QyDo4cj1KdeJcAFRge43bqG7t3Endcaz48W497qOfou9LtDTcwBkvd7pAvsu7ooxySqW7Ojqeok4KUNvJpgsMxtMta0Zm7kTmadNdo/JM+KxdNjyHuEGxE6tPXmPqE2cQ4jUbUIe+ADGVsE5TfXS35pHi6LnDO1hbl+068tP4iLweQXfkwxha+U+N+6OHFnbl+TtPZiPimIFdrmVCMrCWtsJkaEHYEEfMKG46pHgizSfP47qU8ZZlpmo+pLoyFpOrdiJ3b5bqG1n5ifETff5KYZFNWiMuOWNuLMB61DiOsrm53ValyuYm7tdIWCVrnlZE6IAAkLIbbVYA6rLCgMAhZAlBG6X8GwPfVMsSBd2uml40UN0CS9naZdSBLSGMcJ/ENY8vCfiodj6TWVXsGjXvaPIOIHyVhPqNa1zWCRlaQ0aDKRqZOg6n0KgXGmxXqXmXT8QCfqsMTbk7/o3yQqKa4ERRKwUSugwF/DMQGnK42MgHlOsdSpRh6l9+sX+7I94bQ3zd5qEJ0wfGXsAaQ1zRaHax5qko3uiUyVFwNwQdzb43E6nqLrRzvX1/Qz8zcptocfpOcA6m5gt4gc0Hq02hYxfG6NwwPdyNmg/n8lRpk2he+4AgAaeWxt8beYnRSHsX2V/jg9/fhrWODbAPcSbk+8IA2N5PUKL9nuCYvilTu6LctJpGeobNaLWJ3dGjR9Lq++y/Z2lgKAoUZIkuc52rnHUn0AAHIKygLG2j2BwbWZYc6WFj3OMl2hDgPda5rgCCBzBlPnB+GNw9MMDiQOkCZNwNibTzInUmXGUKyiluRbMysErMLKsQc83n8kLeEICIU6jajYKRVGOpu6LQYZ7LtSynWDhDgvnjtEmKoNqttZ31TBgMQ7D1e7dZrjadj/ALqR1cKW3YbJv4pgRXZBs8e67kUT7MC6q4OGZRajhnMxDqQcGU36R1uLDWCCPVLsNxUU2gVbH3X+YsfQ6+qbePODMlRr/Ds7loQLA3B+uy1wylGdxL46bcZcMVcYwFOnkfrMsdNzBGoA5az0C0bxDvKLQ8AZJY4kgyNImzdI3JsbJDicaalN4YyzhOZ2+/u3n/EXeii2OxjmNLic7nDUybix/fVerKEXWuWqSZzLDPeTVI17Q4xp/l3MH3pN/LaPQKO2RUqkmTcrkXzqtlFR4RnObk7Zl4HKFqWlbEnn6QsAlSUNCt85QQtJQG88ggm6xEoQHahRLyGgSSVO+BcObTpuZJ8Wo5nS6jfZnBPfVZYgExmi17W/eysHhVNtOpl87nqM3puuPqJSuouju6VY1FuSt+PYacBhHEQRlaczfORP5qveKVs9ao4buPyt+Ss/G41rHva3xEPDhyAJMyeUEKq8Y2Kjxyc4f6ir4I03Zn1Gb7iRxQsrELpOUFkIhYQG8p/7H9mavEa4pUwQwQaj9mMnX+8bwNz0BSHgnBK+LfkosDnQSASGzG0m0kwB1IG4XojsF2TpYDDtyscK1RrDWc4guzAE5fCS0NaSQI9ZUAe+C8Io4Sk2jQYGMEmBJknUkkkknmSnJCFIMELKEIAQhCAEIQgIW+oUie8oQvnjtFGGrGEYxgBssoQgjXG6DSWyPeBDusTB800YUzhXA3DX2no8NHyJQhbQ9JbH6l7nXA3DZ/d1Hu02FYyk/KNKkCeUBCF2dN3Onr3siH1FyesoXeeQaFxWxQhAYa8rLllCAF3wLA+oxrtCRKEKsuGTHlFn4ug2lWY2m0Na1jCABac5TUzEvqYmC4xmGluawhcsu/sdOD1f2a4v+0LdGlug8vnoNVD+0lMNxVYNsM5+aELaPr+DJ+j5G1CELYyMlTfsN2boYn+ZVzOy1GDLIyuBcZzWnbYjUoQqyCLy4D2TweDJNCkGu8UONyGuiWg6lvhGsnqn5CFK4AIQhSAQhCAEIQgBCEID/9k="
+                    class="card-img-top img_card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title"></i>Gato Juanito <i class="fas fa-cat"></i></h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><i class="fas fa-calendar-alt"></i>Edad:</li>
+                      <li class="list-group-item"> <i class="fas fa-venus-mars"></i>Género:</li>
+                      <li class="list-group-item"><i class="fas fa-notes-medical"></i>Estirilizado:</li>
+                      <li class="list-group-item"> <i class="fas fa-microchip"></i>Chip Nro:</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+
+          <div class="col-2"></div>
         </div>
-      </div>
+      </section>
     </div>
-  </div>
 
-
-
-
-  <!-- Scripts Externos -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous"></script>
-</body>
-
+    <!-- Scripts Externos -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
