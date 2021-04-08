@@ -50,6 +50,11 @@ ol:hover {
 .t4{
   background-color: rgb(158, 39, 39)
 }
+
+.texto_justi{
+  text-justify: auto;
+  text-align: justify;
+}
 /* 2.Imagenes--------------------------------------------------------------------------------------------------------- */
 
 img {
