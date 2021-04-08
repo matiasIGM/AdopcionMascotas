@@ -60,8 +60,21 @@ ol:hover {
 img {
   width: auto;
   max-height: 1200px;
+  float: left;
 }
 
+.img_contenedor {
+  float: left;
+  max-height: 600px;
+  background-size: cover;
+}
+
+.img_card{
+  max-width: 300px;
+  max-height: 300px;
+  min-height: 300px;
+  /* border-radius: 50%; */
+}
 
 
 #myVideo {
@@ -111,7 +124,8 @@ body{
 }
 
 
-.layer_inicio{
-  size: 200px 200px;
-  color: aquamarine;
+
+.grid-separador {
+  display: grid;
+  height: 200px;
 }
